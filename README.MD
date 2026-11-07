@@ -13,7 +13,7 @@ The UI is strictly structured using Flexbox, ScrollView, and View to ensure a re
 
 # ScreenShots of App
 Screenshots: <br>
-![Screenshot_20261107_182320.png](ScreenShot/Screenshot_20261107_182320.png)
+<img alt="Screenshot_20261107_182320.png" height='400' src='ScreenShot/Screenshot_20261107_182320.png'/>
 
 # Demo Video
 
