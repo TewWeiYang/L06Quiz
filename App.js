@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { StyleSheet, ScrollView, TouchableOpacity, Alert, View, Text } from 'react-native';
+import { StyleSheet, ScrollView, TouchableOpacity, Alert, View, Text,icon_name, icon_color} from 'react-native';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+
 
 // Import the component you created in the other file
 // Note: Make sure Quiz.js is in the same folder, or update the path (e.g., './components/Quiz')
@@ -54,6 +56,12 @@ const Interface = () => {
     return (
         <View style={styles.safeArea}>
             <ScrollView contentContainerStyle={styles.scrollContent}>
+                <Text></Text>
+
+                <View style={styles.headerContainer}>
+                    <FontAwesome5 name="gamepad" size={30} color="#4285F4" style={styles.headerIcon} />
+                    <Text style={styles.mainTitle}>Video Game Quiz</Text>
+                </View>
 
                 <Quiz
                     imageUri="https://i.guim.co.uk/img/media/8152f8ea7f06fd8ef5c68a3a594e6ac35dfd774b/0_342_800_480/master/800.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=42bb412858826e59cd33e40975ca3ee1"
@@ -106,7 +114,16 @@ const styles = StyleSheet.create({
         color: '#FFFFFF',
         fontWeight: 'bold',
         fontSize: 14,
+    },
+    mainTitle: {
+        fontSize: 28, // Bigger text for the main header
+        fontWeight: 'bold',
+        color: '#212121',
+    },
+    headerIcon:{
+        marginRight: 10,
     }
-});
+}
+);
 
 export default Interface;

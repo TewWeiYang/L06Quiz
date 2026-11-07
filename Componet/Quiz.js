@@ -2,10 +2,10 @@ import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 
-const Quiz = ({ imageUri, selectedValue, onValueChange, options }) => {
+const Quiz = ({ imageUri, selectedValue, onValueChange, options, icon_name, icon_color }) => {
     return (
         <View style={styles.questionContainer}>
-            <Image source={{ uri: imageUri }} style={styles.animalImage} />
+            <Image source={{ uri: imageUri }} style={styles.gamesImage} />
             <Text style={styles.questionText}>What video games is this?</Text>
             <View style={styles.pickerContainer}>
                 <Picker
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
         marginBottom: 0,
         backgroundColor: '#FFFFFF',
     },
-    animalImage: {
+    gamesImage: {
         width: '100%',
         height: 250,
         resizeMode: 'cover',
